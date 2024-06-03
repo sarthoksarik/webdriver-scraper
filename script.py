@@ -34,21 +34,12 @@ websites = [
 desired_url = 'https://artisan-adolf-renovation.fr'
 desired_url = 'https://artisan-adolf-renovation.fr'
 # Iterate over each website
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
-# List of websites to check
-websites = [
-    'https://imgur.com/gallery/artisan-adolf-M0PAnba',
-    'https://my.weezevent.com/decouverte-du-metier-de-charpentier',
-    'https://fr.foursquare.com/v/artisan-adolf-r%C3%A9novation/65000fb67ade9f58be1182fd'
-]
 
 # Define the URL to match
-desired_url = 'https://artisan-adolf-renovation.fr'
 
 # Iterate over each website
 for website in websites:
-desired_url = 'https://artisan-adolf-renovation.fr'
     # Wait for the page to fully load and other scripts to execute
 # Wait for the page to fully load and other scripts to execute
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
@@ -59,12 +50,8 @@ desired_url = 'https://artisan-adolf-renovation.fr'
     nofollow = False
 
     driver.get(website)
-    driver.get(website)
-    driver.get(website)
     link_elements = driver.find_elements(By.TAG_NAME, 'a')
     for link_element in link_elements:
-        if link_element.get_attribute('href') == desired_url:
-            if link_element.get_attribute('href') == desired_url:
             found = True
             nofollow = False
             # Check for nofollow attribute
@@ -111,7 +98,7 @@ else:
                 
 # Close the browser
 driver.quit()
-driver.quit()
+
 
 
 
