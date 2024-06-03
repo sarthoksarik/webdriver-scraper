@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -8,12 +7,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-import json
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Path to ChromeDriver
 chrome_driver_path = 'chromedriver'  # Update this path if needed
 
 # Set up Chrome options
@@ -37,9 +32,8 @@ websites = [
 
 # Define the URL to match
 desired_url = 'https://artisan-adolf-renovation.fr'
-
+desired_url = 'https://artisan-adolf-renovation.fr'
 # Iterate over each website
-# Initialize the WebDriver
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 # List of websites to check
@@ -54,10 +48,10 @@ desired_url = 'https://artisan-adolf-renovation.fr'
 
 # Iterate over each website
 for website in websites:
-# Add the desired URL
 desired_url = 'https://artisan-adolf-renovation.fr'
     # Wait for the page to fully load and other scripts to execute
-    # Wait for the page to fully load and other scripts to execute
+# Wait for the page to fully load and other scripts to execute
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
 
     
@@ -70,7 +64,7 @@ desired_url = 'https://artisan-adolf-renovation.fr'
     link_elements = driver.find_elements(By.TAG_NAME, 'a')
     for link_element in link_elements:
         if link_element.get_attribute('href') == desired_url:
-        if link_element.get_attribute('href') == desired_url:
+            if link_element.get_attribute('href') == desired_url:
             found = True
             nofollow = False
             # Check for nofollow attribute
@@ -105,12 +99,20 @@ desired_url = 'https://artisan-adolf-renovation.fr'
                         nofollow = True
                     else:
                         break
-    found = False
+if found:
+    if nofollow:
+        print(f'Found a nofollow link to {desired_url} in {website}')
+    else:
+        print(f'Found a dofollow link to {desired_url} in {website}')
+else:
+    print(f'No link to {desired_url} found in {website}')
 
 
-        if nofollow:
+                
 # Close the browser
 driver.quit()
+driver.quit()
+
 
 
 
