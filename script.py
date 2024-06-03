@@ -1,9 +1,14 @@
 from selenium import webdriver
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import json
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
-
+import json
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -34,31 +39,82 @@ websites = [
 desired_url = 'https://artisan-adolf-renovation.fr'
 
 # Iterate over each website
+# Initialize the WebDriver
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
+
+# List of websites to check
+websites = [
+    'https://imgur.com/gallery/artisan-adolf-M0PAnba',
+    'https://my.weezevent.com/decouverte-du-metier-de-charpentier',
+    'https://fr.foursquare.com/v/artisan-adolf-r%C3%A9novation/65000fb67ade9f58be1182fd'
+]
+
+# Define the URL to match
+desired_url = 'https://artisan-adolf-renovation.fr'
+
+# Iterate over each website
 for website in websites:
-    # Open the website
+# Add the desired URL
+desired_url = 'https://artisan-adolf-renovation.fr'
+    # Wait for the page to fully load and other scripts to execute
+    # Wait for the page to fully load and other scripts to execute
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+
+    
+    found = False
+    nofollow = False
+
     driver.get(website)
-
-    # Locate all <a> tag elements
-    link_elements = driver.find_elements_by_tag_name('a')
-
-    # Initialize a boolean to track if a match is found
+    driver.get(website)
+    driver.get(website)
+    link_elements = driver.find_elements(By.TAG_NAME, 'a')
+    for link_element in link_elements:
+        if link_element.get_attribute('href') == desired_url:
+        if link_element.get_attribute('href') == desired_url:
+            found = True
+            nofollow = False
+            # Check for nofollow attribute
+            if 'nofollow' in link_element.get_attribute('rel'):
+                nofollow = True
+            else:
+                break
+        tag_names = ['link', 'meta', 'script', 'img']
+        for tag in tag_names:
+            elements = driver.find_elements(By.TAG_NAME, tag)
+            for element in elements:
+                # Handle different attributes based on tag types
+                url = None
+                if tag in ['link', 'img']:
+                    url = element.get_attribute('href')
+                elif tag == 'meta':
+                    url = element.get_attribute('content')
+                elif tag == 'script':
+                    script_content = element.get_attribute('innerHTML')
+                    try:
+                        data = json.loads(script_content)
+                        if 'url' in data:
+                            url = data['url']
+                    except json.JSONDecodeError:
+                        pass
+                
+                if url == desired_url:
+                    found = True
+                    nofollow = False
+                    # Check for nofollow attribute
+                    if 'nofollow' in element.get_attribute('rel'):
+                        nofollow = True
+                    else:
+                        break
     found = False
 
-    # Iterate over each element and check the href attribute
-    for link_element in link_elements:
-        link_href = link_element.get_attribute('href')
-        if link_href == desired_url:
-            found = True
-            break
 
-    # Print result
-    if found:
-        print(f'yes ({website})')
-    else:
-        print(f'no ({website})')
-
+        if nofollow:
 # Close the browser
 driver.quit()
+
+
+
+
 
 
 
