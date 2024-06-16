@@ -8,6 +8,8 @@ WorkingDirectory=/home/sarik/urlcheckermachine/
 Environment="PATH=/home/sarik/urlcheckermachine/venv/bin/"
 ExecStart=/home/sarik/urlcheckermachine/venv/bin/python3 /home/sarik/urlcheckermachine/sheet_manager.py
 Restart=on-failure
+StandardOutput=journal
+StandardError=journal
 
 [Install]
 WantedBy=multi-user.target
