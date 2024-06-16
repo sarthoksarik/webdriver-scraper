@@ -32,7 +32,6 @@ class SheetManager:
         sheet = self.client.open_by_key(spreadsheet_id).worksheet("Saisie")
         target_url = sheet.acell('F9').value
         urls = sheet.col_values(7)[10:]
-        print(urls[0])
         total_rows = len(urls) + 10 # Calculate the total number of rows based on urls
 
         # Choose the scraper based on the headless flag
@@ -45,15 +44,17 @@ class SheetManager:
         follow_nofollow = []
         for index, url in enumerate(urls, start=11):
             if validators.url(url):
+                print(f"checking {url}", end=" ", flush=True)
                 result, follow, nofollow = scraper.find_urls(url)
-                if (result == 'not found') or (result == 'error'):
-                    extra_info.append((index, result)) 
-                    
-                else:
-                    results.append((index, result))
-                
+                # if (result == 'not found') or (result == 'error'):
+                #     extra_info.append((index, result))    
+                # else:
+                #     results.append((index, result))
+                results.append((index, result))
+                print(result, end="", flush=True)
                 if follow is not None:
                     follow_nofollow.append((index, follow, nofollow))
+                print("")
 
         scraper.close_driver()
 
@@ -66,7 +67,7 @@ class SheetManager:
 
         # Update results for columns T and U
         for res in results:
-            cell_list.append(gspread.Cell(res[0], 20, res[1]))  # Column T is the 20th column
+            cell_list.append(gspread.Cell(res[0], 10, res[1]))  # Column J is the 10th column
             #cell_list.append(gspread.Cell(res[0], 21, res[2]))  # Column U is the 21st column
 
         # Update follow/nofollow for columns O and P
@@ -75,8 +76,8 @@ class SheetManager:
             cell_list.append(gspread.Cell(fn[0], 16, fn[2]))  # Column P is the 16th column
         
         # Update extra info whether error occured or not found in column U 21st Column
-        for ei in extra_info:
-            cell_list.append(gspread.Cell(ei[0], 21, ei[1]))  # Column U is the 21st column
+        # for ei in extra_info:
+        #     cell_list.append(gspread.Cell(ei[0], 21, ei[1]))  # Column U is the 21st column
 
         # Perform the batch update
         sheet.update_cells(cell_list, value_input_option='USER_ENTERED')
@@ -85,7 +86,7 @@ class SheetManager:
 # execute
 if __name__ == '__main__':
     manager = SheetManager('./urlvalidate.json', headless=True)
-    folder_id = '1O1ra-H3a3fOcwFp3vt_0BqcAky4tYHz1'  # You must replace this with your actual Google Drive folder ID
+    folder_id = '1Ja2H-QNHdgSXFdMDK04TU_5N8k1HvvOV'  # You must replace this with your actual Google Drive folder ID
     spreadsheets = manager.list_spreadsheets_in_folder(folder_id)
     for spreadsheet in spreadsheets:
         print(f"Processing {spreadsheet['name']} with ID {spreadsheet['id']}")
