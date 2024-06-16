@@ -1,22 +1,23 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from scraper import WebScraper
+from scraper_headless import WebScraperHeadless
 import validators
 from googleapiclient.discovery import build  # Import this library to interact with the Google Drive API
 
 class SheetManager:
-    def __init__(self, credentials_path):
+    def __init__(self, credentials_path, headless=False):
         self.credentials_path = credentials_path
+        self.headless = headless
         self.client = self.authenticate()
 
     def authenticate(self):
-        # Add the Google Drive scope along with the Google Sheets scope
         scope = [
             'https://www.googleapis.com/auth/spreadsheets',
             'https://www.googleapis.com/auth/drive'
         ]
         creds = ServiceAccountCredentials.from_json_keyfile_name(self.credentials_path, scope)
-        self.drive_service = build('drive', 'v3', credentials=creds)  # Build the Drive API service
+        self.drive_service = build('drive', 'v3', credentials=creds)
         return gspread.authorize(creds)
 
     def list_spreadsheets_in_folder(self, folder_id):
@@ -30,10 +31,15 @@ class SheetManager:
     def process_sheet(self, spreadsheet_id):
         sheet = self.client.open_by_key(spreadsheet_id).worksheet("Saisie")
         target_url = sheet.acell('F9').value
-        urls = sheet.col_values(7)[10:]  # Assuming G9 is the header
-        total_rows = len(urls) + 10  # Calculate the total number of rows based on urls
+        urls = sheet.col_values(7)[10:]
+        print(urls[0])
+        total_rows = len(urls) + 10 # Calculate the total number of rows based on urls
 
-        scraper = WebScraper(target_url)
+        # Choose the scraper based on the headless flag
+        if self.headless:
+            scraper = WebScraperHeadless(target_url)
+        else:
+            scraper = WebScraper(target_url)
         results = []
         extra_info = []
         follow_nofollow = []
@@ -78,7 +84,7 @@ class SheetManager:
 
 # execute
 if __name__ == '__main__':
-    manager = SheetManager('./urlvalidate.json')
+    manager = SheetManager('./urlvalidate.json', headless=True)
     folder_id = '1O1ra-H3a3fOcwFp3vt_0BqcAky4tYHz1'  # You must replace this with your actual Google Drive folder ID
     spreadsheets = manager.list_spreadsheets_in_folder(folder_id)
     for spreadsheet in spreadsheets:
