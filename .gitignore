@@ -4,3 +4,4 @@ __pycache__/
 .env
 env/
 urlvalidate.json
+.DS_Store
