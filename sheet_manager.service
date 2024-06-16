@@ -1,0 +1,13 @@
+[Unit]
+Description=Run my Python script
+After=network.target
+
+[Service]
+User=sarik
+WorkingDirectory=/home/sarik/urlcheckermachine/
+Environment="PATH=/home/sarik/urlcheckermachine/venv/bin/"
+ExecStart=/home/sarik/urlcheckermachine/venv/bin/python3 /home/sarik/urlcheckermachine/sheet_manager.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
