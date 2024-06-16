@@ -1,0 +1,266 @@
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation
+URL not found on https://www.pinterest.fr/artisanadolf/
+URL not found on https://artisan-adolf-renovation.blogspot.com/
+URL found on https://web.archive.org/web/20230926071358/https://artisan-adolf-renovation.fr/: follow
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://imgur.com/gallery/M0PAnba: Message: timeout: Timed out receiving message from renderer: 14.258
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001031aa4c8 chromedriver + 4302024
+1   chromedriver                        0x00000001031a2e10 chromedriver + 4271632
+2   chromedriver                        0x0000000102dd419c chromedriver + 278940
+3   chromedriver                        0x0000000102dbee88 chromedriver + 192136
+4   chromedriver                        0x0000000102dbea7c chromedriver + 191100
+5   chromedriver                        0x0000000102dbc85c chromedriver + 182364
+6   chromedriver                        0x0000000102dbd310 chromedriver + 185104
+7   chromedriver                        0x0000000102dcb620 chromedriver + 243232
+8   chromedriver                        0x0000000102dde55c chromedriver + 320860
+9   chromedriver                        0x0000000102dbd958 chromedriver + 186712
+10  chromedriver                        0x0000000102dde314 chromedriver + 320276
+11  chromedriver                        0x0000000102e4ede4 chromedriver + 781796
+12  chromedriver                        0x0000000102e0b004 chromedriver + 503812
+13  chromedriver                        0x0000000102e0b9ec chromedriver + 506348
+14  chromedriver                        0x0000000103172510 chromedriver + 4072720
+15  chromedriver                        0x0000000103176fbc chromedriver + 4091836
+16  chromedriver                        0x0000000103159754 chromedriver + 3970900
+17  chromedriver                        0x00000001031778a4 chromedriver + 4094116
+18  chromedriver                        0x000000010314c6d4 chromedriver + 3917524
+19  chromedriver                        0x0000000103194b08 chromedriver + 4213512
+20  chromedriver                        0x0000000103194c84 chromedriver + 4213892
+21  chromedriver                        0x00000001031a2a08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://web.archive.org/web/20230926071358/https://artisan-adolf-renovation.fr/: Message: timeout: Timed out receiving message from renderer: 13.612
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x0000000104d024c8 chromedriver + 4302024
+1   chromedriver                        0x0000000104cfae10 chromedriver + 4271632
+2   chromedriver                        0x000000010492c19c chromedriver + 278940
+3   chromedriver                        0x0000000104916e88 chromedriver + 192136
+4   chromedriver                        0x0000000104916a7c chromedriver + 191100
+5   chromedriver                        0x000000010491485c chromedriver + 182364
+6   chromedriver                        0x0000000104915310 chromedriver + 185104
+7   chromedriver                        0x0000000104923620 chromedriver + 243232
+8   chromedriver                        0x000000010493655c chromedriver + 320860
+9   chromedriver                        0x0000000104915958 chromedriver + 186712
+10  chromedriver                        0x0000000104936314 chromedriver + 320276
+11  chromedriver                        0x00000001049a6de4 chromedriver + 781796
+12  chromedriver                        0x0000000104963004 chromedriver + 503812
+13  chromedriver                        0x00000001049639ec chromedriver + 506348
+14  chromedriver                        0x0000000104cca510 chromedriver + 4072720
+15  chromedriver                        0x0000000104ccefbc chromedriver + 4091836
+16  chromedriver                        0x0000000104cb1754 chromedriver + 3970900
+17  chromedriver                        0x0000000104ccf8a4 chromedriver + 4094116
+18  chromedriver                        0x0000000104ca46d4 chromedriver + 3917524
+19  chromedriver                        0x0000000104cecb08 chromedriver + 4213512
+20  chromedriver                        0x0000000104cecc84 chromedriver + 4213892
+21  chromedriver                        0x0000000104cfaa08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://fr.quora.com/profile/Artisan-Adolf?q=Artisan%20Adolf%20: Message: timeout: Timed out receiving message from renderer: -0.006
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x0000000104d024c8 chromedriver + 4302024
+1   chromedriver                        0x0000000104cfae10 chromedriver + 4271632
+2   chromedriver                        0x000000010492c19c chromedriver + 278940
+3   chromedriver                        0x0000000104916e88 chromedriver + 192136
+4   chromedriver                        0x0000000104916a7c chromedriver + 191100
+5   chromedriver                        0x000000010491485c chromedriver + 182364
+6   chromedriver                        0x0000000104915310 chromedriver + 185104
+7   chromedriver                        0x0000000104923620 chromedriver + 243232
+8   chromedriver                        0x000000010493655c chromedriver + 320860
+9   chromedriver                        0x0000000104915958 chromedriver + 186712
+10  chromedriver                        0x0000000104936314 chromedriver + 320276
+11  chromedriver                        0x00000001049a6b9c chromedriver + 781212
+12  chromedriver                        0x0000000104963004 chromedriver + 503812
+13  chromedriver                        0x00000001049639ec chromedriver + 506348
+14  chromedriver                        0x0000000104cca510 chromedriver + 4072720
+15  chromedriver                        0x0000000104ccefbc chromedriver + 4091836
+16  chromedriver                        0x0000000104cb1754 chromedriver + 3970900
+17  chromedriver                        0x0000000104ccf8a4 chromedriver + 4094116
+18  chromedriver                        0x0000000104ca46d4 chromedriver + 3917524
+19  chromedriver                        0x0000000104cecb08 chromedriver + 4213512
+20  chromedriver                        0x0000000104cecc84 chromedriver + 4213892
+21  chromedriver                        0x0000000104cfaa08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://imgur.com/gallery/M0PAnba: Message: timeout: Timed out receiving message from renderer: 14.537
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001051f24c8 chromedriver + 4302024
+1   chromedriver                        0x00000001051eae10 chromedriver + 4271632
+2   chromedriver                        0x0000000104e1c19c chromedriver + 278940
+3   chromedriver                        0x0000000104e06e88 chromedriver + 192136
+4   chromedriver                        0x0000000104e06a7c chromedriver + 191100
+5   chromedriver                        0x0000000104e0485c chromedriver + 182364
+6   chromedriver                        0x0000000104e05310 chromedriver + 185104
+7   chromedriver                        0x0000000104e13620 chromedriver + 243232
+8   chromedriver                        0x0000000104e2655c chromedriver + 320860
+9   chromedriver                        0x0000000104e05958 chromedriver + 186712
+10  chromedriver                        0x0000000104e26314 chromedriver + 320276
+11  chromedriver                        0x0000000104e96de4 chromedriver + 781796
+12  chromedriver                        0x0000000104e53004 chromedriver + 503812
+13  chromedriver                        0x0000000104e539ec chromedriver + 506348
+14  chromedriver                        0x00000001051ba510 chromedriver + 4072720
+15  chromedriver                        0x00000001051befbc chromedriver + 4091836
+16  chromedriver                        0x00000001051a1754 chromedriver + 3970900
+17  chromedriver                        0x00000001051bf8a4 chromedriver + 4094116
+18  chromedriver                        0x00000001051946d4 chromedriver + 3917524
+19  chromedriver                        0x00000001051dcb08 chromedriver + 4213512
+20  chromedriver                        0x00000001051dcc84 chromedriver + 4213892
+21  chromedriver                        0x00000001051eaa08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://web.archive.org/web/20230926071358/https://artisan-adolf-renovation.fr/: Message: timeout: Timed out receiving message from renderer: 14.292
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001053ca4c8 chromedriver + 4302024
+1   chromedriver                        0x00000001053c2e10 chromedriver + 4271632
+2   chromedriver                        0x0000000104ff419c chromedriver + 278940
+3   chromedriver                        0x0000000104fdee88 chromedriver + 192136
+4   chromedriver                        0x0000000104fdea7c chromedriver + 191100
+5   chromedriver                        0x0000000104fdc85c chromedriver + 182364
+6   chromedriver                        0x0000000104fdd310 chromedriver + 185104
+7   chromedriver                        0x0000000104feb620 chromedriver + 243232
+8   chromedriver                        0x0000000104ffe55c chromedriver + 320860
+9   chromedriver                        0x0000000104fdd958 chromedriver + 186712
+10  chromedriver                        0x0000000104ffe314 chromedriver + 320276
+11  chromedriver                        0x000000010506ede4 chromedriver + 781796
+12  chromedriver                        0x000000010502b004 chromedriver + 503812
+13  chromedriver                        0x000000010502b9ec chromedriver + 506348
+14  chromedriver                        0x0000000105392510 chromedriver + 4072720
+15  chromedriver                        0x0000000105396fbc chromedriver + 4091836
+16  chromedriver                        0x0000000105379754 chromedriver + 3970900
+17  chromedriver                        0x00000001053978a4 chromedriver + 4094116
+18  chromedriver                        0x000000010536c6d4 chromedriver + 3917524
+19  chromedriver                        0x00000001053b4b08 chromedriver + 4213512
+20  chromedriver                        0x00000001053b4c84 chromedriver + 4213892
+21  chromedriver                        0x00000001053c2a08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://imgur.com/gallery/M0PAnba: Message: timeout: Timed out receiving message from renderer: 14.546
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001053ca4c8 chromedriver + 4302024
+1   chromedriver                        0x00000001053c2e10 chromedriver + 4271632
+2   chromedriver                        0x0000000104ff419c chromedriver + 278940
+3   chromedriver                        0x0000000104fdee88 chromedriver + 192136
+4   chromedriver                        0x0000000104fdea7c chromedriver + 191100
+5   chromedriver                        0x0000000104fdc85c chromedriver + 182364
+6   chromedriver                        0x0000000104fdd310 chromedriver + 185104
+7   chromedriver                        0x0000000104feb620 chromedriver + 243232
+8   chromedriver                        0x0000000104ffe55c chromedriver + 320860
+9   chromedriver                        0x0000000104fdd958 chromedriver + 186712
+10  chromedriver                        0x0000000104ffe314 chromedriver + 320276
+11  chromedriver                        0x000000010506ede4 chromedriver + 781796
+12  chromedriver                        0x000000010502b004 chromedriver + 503812
+13  chromedriver                        0x000000010502b9ec chromedriver + 506348
+14  chromedriver                        0x0000000105392510 chromedriver + 4072720
+15  chromedriver                        0x0000000105396fbc chromedriver + 4091836
+16  chromedriver                        0x0000000105379754 chromedriver + 3970900
+17  chromedriver                        0x00000001053978a4 chromedriver + 4094116
+18  chromedriver                        0x000000010536c6d4 chromedriver + 3917524
+19  chromedriver                        0x00000001053b4b08 chromedriver + 4213512
+20  chromedriver                        0x00000001053b4c84 chromedriver + 4213892
+21  chromedriver                        0x00000001053c2a08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://imgur.com/gallery/M0PAnba: Message: timeout: Timed out receiving message from renderer: 14.538
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x0000000100bc24c8 chromedriver + 4302024
+1   chromedriver                        0x0000000100bbae10 chromedriver + 4271632
+2   chromedriver                        0x00000001007ec19c chromedriver + 278940
+3   chromedriver                        0x00000001007d6e88 chromedriver + 192136
+4   chromedriver                        0x00000001007d6a7c chromedriver + 191100
+5   chromedriver                        0x00000001007d485c chromedriver + 182364
+6   chromedriver                        0x00000001007d5310 chromedriver + 185104
+7   chromedriver                        0x00000001007e3620 chromedriver + 243232
+8   chromedriver                        0x00000001007f655c chromedriver + 320860
+9   chromedriver                        0x00000001007d5958 chromedriver + 186712
+10  chromedriver                        0x00000001007f6314 chromedriver + 320276
+11  chromedriver                        0x0000000100866de4 chromedriver + 781796
+12  chromedriver                        0x0000000100823004 chromedriver + 503812
+13  chromedriver                        0x00000001008239ec chromedriver + 506348
+14  chromedriver                        0x0000000100b8a510 chromedriver + 4072720
+15  chromedriver                        0x0000000100b8efbc chromedriver + 4091836
+16  chromedriver                        0x0000000100b71754 chromedriver + 3970900
+17  chromedriver                        0x0000000100b8f8a4 chromedriver + 4094116
+18  chromedriver                        0x0000000100b646d4 chromedriver + 3917524
+19  chromedriver                        0x0000000100bacb08 chromedriver + 4213512
+20  chromedriver                        0x0000000100bacc84 chromedriver + 4213892
+21  chromedriver                        0x0000000100bbaa08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
