@@ -5,3 +5,6 @@ __pycache__/
 env/
 urlvalidate.json
 .DS_Store
+results.log
+list.txt
+results.txt

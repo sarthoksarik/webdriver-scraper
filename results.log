@@ -264,3 +264,403 @@ An error occurred while processing https://www.instagram.com/artisan_adolf: Mess
 
 An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
 An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://www.pinterest.fr/artisanadolf/: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x000000010092e4c8 chromedriver + 4302024
+1   chromedriver                        0x0000000100926e10 chromedriver + 4271632
+2   chromedriver                        0x000000010055819c chromedriver + 278940
+3   chromedriver                        0x000000010055c66c chromedriver + 296556
+4   chromedriver                        0x000000010055e740 chromedriver + 304960
+5   chromedriver                        0x00000001005d372c chromedriver + 784172
+6   chromedriver                        0x00000001005d2c5c chromedriver + 781404
+7   chromedriver                        0x000000010058f004 chromedriver + 503812
+8   chromedriver                        0x000000010058f9ec chromedriver + 506348
+9   chromedriver                        0x00000001008f6510 chromedriver + 4072720
+10  chromedriver                        0x00000001008fafbc chromedriver + 4091836
+11  chromedriver                        0x00000001008dd754 chromedriver + 3970900
+12  chromedriver                        0x00000001008fb8a4 chromedriver + 4094116
+13  chromedriver                        0x00000001008d06d4 chromedriver + 3917524
+14  chromedriver                        0x0000000100918b08 chromedriver + 4213512
+15  chromedriver                        0x0000000100918c84 chromedriver + 4213892
+16  chromedriver                        0x0000000100926a08 chromedriver + 4270600
+17  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+18  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://web.archive.org/web/20230926071358/https://artisan-adolf-renovation.fr/: Message: timeout: Timed out receiving message from renderer: 13.889
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x000000010092e4c8 chromedriver + 4302024
+1   chromedriver                        0x0000000100926e10 chromedriver + 4271632
+2   chromedriver                        0x000000010055819c chromedriver + 278940
+3   chromedriver                        0x0000000100542e88 chromedriver + 192136
+4   chromedriver                        0x0000000100542a7c chromedriver + 191100
+5   chromedriver                        0x000000010054085c chromedriver + 182364
+6   chromedriver                        0x0000000100541310 chromedriver + 185104
+7   chromedriver                        0x000000010054f620 chromedriver + 243232
+8   chromedriver                        0x000000010056255c chromedriver + 320860
+9   chromedriver                        0x0000000100541958 chromedriver + 186712
+10  chromedriver                        0x0000000100562314 chromedriver + 320276
+11  chromedriver                        0x00000001005d2de4 chromedriver + 781796
+12  chromedriver                        0x000000010058f004 chromedriver + 503812
+13  chromedriver                        0x000000010058f9ec chromedriver + 506348
+14  chromedriver                        0x00000001008f6510 chromedriver + 4072720
+15  chromedriver                        0x00000001008fafbc chromedriver + 4091836
+16  chromedriver                        0x00000001008dd754 chromedriver + 3970900
+17  chromedriver                        0x00000001008fb8a4 chromedriver + 4094116
+18  chromedriver                        0x00000001008d06d4 chromedriver + 3917524
+19  chromedriver                        0x0000000100918b08 chromedriver + 4213512
+20  chromedriver                        0x0000000100918c84 chromedriver + 4213892
+21  chromedriver                        0x0000000100926a08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://fr.quora.com/profile/Artisan-Adolf?q=Artisan%20Adolf%20: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+0   chromedriver                        0x000000010092e4c8 chromedriver + 4302024
+1   chromedriver                        0x0000000100926e10 chromedriver + 4271632
+2   chromedriver                        0x000000010055819c chromedriver + 278940
+3   chromedriver                        0x000000010055c66c chromedriver + 296556
+4   chromedriver                        0x000000010055e740 chromedriver + 304960
+5   chromedriver                        0x00000001005d372c chromedriver + 784172
+6   chromedriver                        0x00000001005d2c5c chromedriver + 781404
+7   chromedriver                        0x000000010058f004 chromedriver + 503812
+8   chromedriver                        0x000000010058f9ec chromedriver + 506348
+9   chromedriver                        0x00000001008f6510 chromedriver + 4072720
+10  chromedriver                        0x00000001008fafbc chromedriver + 4091836
+11  chromedriver                        0x00000001008dd754 chromedriver + 3970900
+12  chromedriver                        0x00000001008fb8a4 chromedriver + 4094116
+13  chromedriver                        0x00000001008d06d4 chromedriver + 3917524
+14  chromedriver                        0x0000000100918b08 chromedriver + 4213512
+15  chromedriver                        0x0000000100918c84 chromedriver + 4213892
+16  chromedriver                        0x0000000100926a08 chromedriver + 4270600
+17  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+18  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://www.pinterest.fr/artisanadolf/: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisan-adolf-renovation.blogspot.com/: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://web.archive.org/web/20230926071358/https://artisan-adolf-renovation.fr/: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://issuu.com/artisanadolf/docs/design_sans_titre: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://sites.google.com/view/artisanadolfrenovation/accueil: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://imgur.com/gallery/M0PAnba: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://www.pagesjaunes.fr/annuaire/chercherlespros?quoiqui=ArtIsan+Adolf+&ou=La+Seyne+sur+Mer+%2883500%29&univers=pagesjaunes&idOu=L08312600: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://fr.foursquare.com/v/artisan-adolf-r%C3%A9novation/65000fb67ade9f58be1182fd: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://fr.quora.com/profile/Artisan-Adolf?q=Artisan%20Adolf%20: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://www.journaldunet.com/account/artisan-adolf-159574: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x00000001032964c8 chromedriver + 4302024
+1   chromedriver                        0x000000010328ee10 chromedriver + 4271632
+2   chromedriver                        0x0000000102ec019c chromedriver + 278940
+3   chromedriver                        0x0000000102e9b474 chromedriver + 128116
+4   chromedriver                        0x0000000102f27394 chromedriver + 701332
+5   chromedriver                        0x0000000102f3a4e4 chromedriver + 779492
+6   chromedriver                        0x0000000102ef7004 chromedriver + 503812
+7   chromedriver                        0x0000000102ef79ec chromedriver + 506348
+8   chromedriver                        0x000000010325e510 chromedriver + 4072720
+9   chromedriver                        0x0000000103262fbc chromedriver + 4091836
+10  chromedriver                        0x0000000103245754 chromedriver + 3970900
+11  chromedriver                        0x00000001032638a4 chromedriver + 4094116
+12  chromedriver                        0x00000001032386d4 chromedriver + 3917524
+13  chromedriver                        0x0000000103280b08 chromedriver + 4213512
+14  chromedriver                        0x0000000103280c84 chromedriver + 4213892
+15  chromedriver                        0x000000010328ea08 chromedriver + 4270600
+16  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+17  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/Users/sariksadman/.wdm/drivers/chromedriver/mac64/125.0.6422.141/chromedriver-mac-arm64/chromedriver] found in cache
+An error occurred while processing https://www.instagram.com/artisan_adolf: Message: 
+
+An error occurred while processing https://www.youtube.com/@ArtisanAdolfRenovation: argument of type 'NoneType' is not iterable
+An error occurred while processing https://imgur.com/gallery/M0PAnba: Message: timeout: Timed out receiving message from renderer: 14.542
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+0   chromedriver                        0x0000000104d264c8 chromedriver + 4302024
+1   chromedriver                        0x0000000104d1ee10 chromedriver + 4271632
+2   chromedriver                        0x000000010495019c chromedriver + 278940
+3   chromedriver                        0x000000010493ae88 chromedriver + 192136
+4   chromedriver                        0x000000010493aa7c chromedriver + 191100
+5   chromedriver                        0x000000010493885c chromedriver + 182364
+6   chromedriver                        0x0000000104939310 chromedriver + 185104
+7   chromedriver                        0x0000000104947620 chromedriver + 243232
+8   chromedriver                        0x000000010495a55c chromedriver + 320860
+9   chromedriver                        0x0000000104939958 chromedriver + 186712
+10  chromedriver                        0x000000010495a314 chromedriver + 320276
+11  chromedriver                        0x00000001049cade4 chromedriver + 781796
+12  chromedriver                        0x0000000104987004 chromedriver + 503812
+13  chromedriver                        0x00000001049879ec chromedriver + 506348
+14  chromedriver                        0x0000000104cee510 chromedriver + 4072720
+15  chromedriver                        0x0000000104cf2fbc chromedriver + 4091836
+16  chromedriver                        0x0000000104cd5754 chromedriver + 3970900
+17  chromedriver                        0x0000000104cf38a4 chromedriver + 4094116
+18  chromedriver                        0x0000000104cc86d4 chromedriver + 3917524
+19  chromedriver                        0x0000000104d10b08 chromedriver + 4213512
+20  chromedriver                        0x0000000104d10c84 chromedriver + 4213892
+21  chromedriver                        0x0000000104d1ea08 chromedriver + 4270600
+22  libsystem_pthread.dylib             0x0000000180e1a034 _pthread_start + 136
+23  libsystem_pthread.dylib             0x0000000180e14e3c thread_start + 8
+
+An error occurred while processing https://artisanadolf.fandom.com/fr/wiki/Wiki_artisanadolf: argument of type 'NoneType' is not iterable

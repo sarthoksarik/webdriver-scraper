@@ -40,7 +40,7 @@ class SheetManager:
         for index, url in enumerate(urls, start=11):
             if validators.url(url):
                 result, follow, nofollow = scraper.find_urls(url)
-                if (result != 'not found') or (result != 'error'):
+                if (result == 'not found') or (result == 'error'):
                     extra_info.append((index, result)) 
                     
                 else:
@@ -75,7 +75,12 @@ class SheetManager:
         # Perform the batch update
         sheet.update_cells(cell_list, value_input_option='USER_ENTERED')
 
-# Example usage
+
+# execute
 if __name__ == '__main__':
     manager = SheetManager('./urlvalidate.json')
-    manager.process_sheet('1ZYaZ0ONreZ5evimhSSOWCDaJt79S3Bl-nEGzKZhYTVQ')
+    folder_id = '1O1ra-H3a3fOcwFp3vt_0BqcAky4tYHz1'  # You must replace this with your actual Google Drive folder ID
+    spreadsheets = manager.list_spreadsheets_in_folder(folder_id)
+    for spreadsheet in spreadsheets:
+        print(f"Processing {spreadsheet['name']} with ID {spreadsheet['id']}")
+        manager.process_sheet(spreadsheet['id'])
