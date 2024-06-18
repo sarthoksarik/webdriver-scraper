@@ -58,6 +58,8 @@ class SheetManager:
                 if follow is not None:
                     follow_nofollow.append((index, follow, nofollow))
                 print("")
+            else:
+                results.append((index, "not searched"))
 
         scraper.close_driver()
 
