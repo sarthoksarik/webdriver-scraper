@@ -61,11 +61,11 @@ class SheetManager:
                     if follow is not None:
                         follow_nofollow.append((index, follow, nofollow))
                 except Exception as e:
-                    print(f"failed to fetch for this {url} from {spreadsheet_id}")    
+                    print(f"failed to fetch for this {url} from {spreadsheet_id} due to {e}")    
                 print("")
             else:
                 results.append((index, ""))
-            # if index == stop_row: break
+            if index == stop_row: break
         scraper.close_driver()
 
         # Perform batch updates using the batch_update_sheet function
