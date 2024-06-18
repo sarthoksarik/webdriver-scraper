@@ -30,8 +30,12 @@ class SheetManager:
 
     def process_sheet(self, spreadsheet_id):
         sheet = self.client.open_by_key(spreadsheet_id).worksheet("Saisie")
-        target_url = sheet.acell('F9').value
-        urls = sheet.col_values(7)[10:]
+        sheet_data = self.necessary_ranges(sheet)
+
+        target_url = sheet_data['target_url']
+        urls = sheet_data['urls']
+        colds = sheet_data['col_d']
+
         total_rows = len(urls) + 10 # Calculate the total number of rows based on urls
         # Choose the scraper based on the headless flag
         if self.headless:
@@ -41,8 +45,8 @@ class SheetManager:
         results = []
         extra_info = []
         follow_nofollow = []
-        for index, url in enumerate(urls, start=11):
-            if validators.url(url):
+        for index, (url, cold) in enumerate(zip(urls, colds), start=11):
+            if validators.url(url) and (cold == "TRUE"):
                 print(f"checking {url}", end=" ", flush=True)
                 result, follow, nofollow = scraper.find_urls(url)
                 # if (result == 'not found') or (result == 'error'):
@@ -80,7 +84,21 @@ class SheetManager:
 
         # Perform the batch update
         sheet.update_cells(cell_list, value_input_option='USER_ENTERED')
-
+    
+    def necessary_ranges(self, sheet):
+        range_list = ["F9", "D11:D", "G11:G"]
+        data_set = sheet.batch_get(range_list)
+        sheet_data = {}
+        sheet_data['target_url'] = data_set[0][0][0]
+        sheet_data['col_d'] = [item[0] for item in data_set[1]]
+        sheet_data['urls'] = [item[0] if item else "" for item in data_set[2] if item]
+        for index in range(len(sheet_data['col_d']) - 1, -1, -1):
+            if sheet_data['col_d'][index].lower() == 'true':
+                last_row = index + 1 + 10
+                break  # +1 to convert from 0-based index to 1-based index
+    
+        sheet_data['last_row'] = last_row
+        return sheet_data
 
 # execute
 # execute
