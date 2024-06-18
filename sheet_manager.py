@@ -48,16 +48,20 @@ class SheetManager:
         follow_nofollow = []
         for index, (url, cold) in enumerate(zip(urls, colds), start=11):
             if validators.url(url) and (cold == "TRUE"):
+                url = url.strip()
                 print(f"checking {url}", end=" ", flush=True)
-                result, follow, nofollow = scraper.find_urls(url)
-                # if (result == 'not found') or (result == 'error'):
-                #     extra_info.append((index, result))    
-                # else:
-                #     results.append((index, result))
-                results.append((index, result))
-                print(result, end="", flush=True)
-                if follow is not None:
-                    follow_nofollow.append((index, follow, nofollow))
+                try:
+                    result, follow, nofollow = scraper.find_urls(url)
+                    # if (result == 'not found') or (result == 'error'):
+                    #     extra_info.append((index, result))    
+                    # else:
+                    #     results.append((index, result))
+                    results.append((index, result))
+                    print(result, end="", flush=True)
+                    if follow is not None:
+                        follow_nofollow.append((index, follow, nofollow))
+                except Exception as e:
+                    print(f"failed to fetch for this {url} from {spreadsheet_id}")    
                 print("")
             else:
                 results.append((index, ""))
@@ -93,7 +97,7 @@ class SheetManager:
         data_set = sheet.batch_get(range_list)
         sheet_data = {}
         sheet_data['target_url'] = data_set[0][0][0]
-        sheet_data['col_d'] = [item[0] for item in data_set[1]]
+        sheet_data['col_d'] = [item[0] if item else "" for item in data_set[1]]
         sheet_data['urls'] = [item[0] if item else "" for item in data_set[2]]
         for index in range(len(sheet_data['col_d']) - 1, -1, -1):
             if sheet_data['col_d'][index].lower() == 'true':
@@ -115,4 +119,7 @@ if __name__ == '__main__':
             print(f"Skipping {spreadsheet['name']} as it starts with a number.")
             continue
         print(f"Processing {spreadsheet['name']} with ID {spreadsheet['id']}")
-        manager.process_sheet(spreadsheet['id'])
+        try:
+            manager.process_sheet(spreadsheet['id'])
+        except Exception as e:
+            print(f"couldn't process file: {spreadsheet['name']} due to error {e}")
