@@ -35,6 +35,7 @@ class SheetManager:
         target_url = sheet_data['target_url']
         urls = sheet_data['urls']
         colds = sheet_data['col_d']
+        stop_row = sheet_data['last_row']
 
         total_rows = len(urls) + 10 # Calculate the total number of rows based on urls
         # Choose the scraper based on the headless flag
@@ -60,7 +61,7 @@ class SheetManager:
                 print("")
             else:
                 results.append((index, "not searched"))
-
+            # if index == stop_row: break
         scraper.close_driver()
 
         # Perform batch updates using the batch_update_sheet function
