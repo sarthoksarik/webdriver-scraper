@@ -60,7 +60,7 @@ class SheetManager:
                     follow_nofollow.append((index, follow, nofollow))
                 print("")
             else:
-                results.append((index, "not searched"))
+                results.append((index, ""))
             # if index == stop_row: break
         scraper.close_driver()
 
@@ -94,7 +94,7 @@ class SheetManager:
         sheet_data = {}
         sheet_data['target_url'] = data_set[0][0][0]
         sheet_data['col_d'] = [item[0] for item in data_set[1]]
-        sheet_data['urls'] = [item[0] if item else "" for item in data_set[2] if item]
+        sheet_data['urls'] = [item[0] if item else "" for item in data_set[2]]
         for index in range(len(sheet_data['col_d']) - 1, -1, -1):
             if sheet_data['col_d'][index].lower() == 'true':
                 last_row = index + 1 + 10
