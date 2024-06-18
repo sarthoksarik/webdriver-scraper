@@ -32,7 +32,7 @@ class SheetManager:
         sheet = self.client.open_by_key(spreadsheet_id).worksheet("Saisie")
         sheet_data = self.necessary_ranges(sheet)
 
-        target_url = sheet_data['target_url']
+        target_url = sheet_data['target_url'].strip()
         urls = sheet_data['urls']
         colds = sheet_data['col_d']
         stop_row = sheet_data['last_row']
