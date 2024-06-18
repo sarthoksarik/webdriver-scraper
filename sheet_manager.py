@@ -33,7 +33,6 @@ class SheetManager:
         target_url = sheet.acell('F9').value
         urls = sheet.col_values(7)[10:]
         total_rows = len(urls) + 10 # Calculate the total number of rows based on urls
-
         # Choose the scraper based on the headless flag
         if self.headless:
             scraper = WebScraperHeadless(target_url)
@@ -84,10 +83,15 @@ class SheetManager:
 
 
 # execute
+# execute
 if __name__ == '__main__':
     manager = SheetManager('./urlvalidate.json', headless=True)
-    folder_id = '1Ja2H-QNHdgSXFdMDK04TU_5N8k1HvvOV'  # You must replace this with your actual Google Drive folder ID
+    folder_id = '1Ja2H-QNHdgSXFdMDK04TU_5N8k1HvvOV'  # Replace this with your actual Google Drive folder ID
     spreadsheets = manager.list_spreadsheets_in_folder(folder_id)
     for spreadsheet in spreadsheets:
+        # Check if the first character of the name is a digit
+        if spreadsheet['name'][0].isdigit():
+            print(f"Skipping {spreadsheet['name']} as it starts with a number.")
+            continue
         print(f"Processing {spreadsheet['name']} with ID {spreadsheet['id']}")
         manager.process_sheet(spreadsheet['id'])
