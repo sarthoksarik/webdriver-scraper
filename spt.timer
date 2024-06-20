@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for running UrlChecker 2 days a Month
+
+[Timer]
+OnCalendar=*-*-11 06:00:00
+OnCalendar=*-*-22 06:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
