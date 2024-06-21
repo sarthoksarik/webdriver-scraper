@@ -73,7 +73,7 @@ class WebScraperHeadless:
                         break
 
             if found:
-                return (datetime.now().strftime('%Y/%m/%d'), not all_nofollow, all_nofollow)
+                return (datetime.now().strftime('%d/%m/%Y'), not all_nofollow, all_nofollow)
             else:
                 return ('not found', None, None)
         except Exception as e:
