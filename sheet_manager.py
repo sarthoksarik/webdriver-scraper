@@ -91,7 +91,7 @@ class SheetManager:
         #     cell_list.append(gspread.Cell(ei[0], 21, ei[1]))  # Column U is the 21st column
 
         # Perform the batch update
-        sheet.update_cells(cell_list, value_input_option='USER_ENTERED')
+        sheet.update_cells(cell_list, value_input_option='RAW')
     
     def necessary_ranges(self, sheet):
         range_list = ["F9", "D11:D", "G11:G"]
