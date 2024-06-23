@@ -47,8 +47,9 @@ class SheetManager:
         extra_info = []
         follow_nofollow = []
         for index, (url, cold) in enumerate(zip(urls, colds), start=11):
+            url = url.strip()
             if validators.url(url) and (cold == "TRUE"):
-                url = url.strip()
+                
                 print(f"checking {url}", end=" ", flush=True)
                 try:
                     result, follow, nofollow = scraper.find_urls(url)
