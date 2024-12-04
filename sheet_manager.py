@@ -78,13 +78,13 @@ class SheetManager:
 
         # Update results for columns T and U
         for res in results:
-            cell_list.append(gspread.Cell(res[0], 10, res[1]))  # Column J is the 10th column
+            cell_list.append(gspread.Cell(res[0], 11, res[1]))  # Column K is the 11th column
             #cell_list.append(gspread.Cell(res[0], 21, res[2]))  # Column U is the 21st column
 
         # Update follow/nofollow for columns O and P
         for fn in follow_nofollow:
-            cell_list.append(gspread.Cell(fn[0], 15, fn[1]))  # Column O is the 15th column
-            cell_list.append(gspread.Cell(fn[0], 16, fn[2]))  # Column P is the 16th column
+            cell_list.append(gspread.Cell(fn[0], 16, fn[1]))  # Column P is the 16th column
+            cell_list.append(gspread.Cell(fn[0], 17, fn[2]))  # Column Q is the 17th column
         
         # Update extra info whether error occured or not found in column U 21st Column
         # for ei in extra_info:

@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 User=sarik
-WorkingDirectory=/home/sarik/urlcheckermachine/
-Environment="PATH=/home/sarik/urlcheckermachine/venv/bin/:/usr/bin:/usr/bin/google-chrome"
-ExecStart=/home/sarik/urlcheckermachine/venv/bin/python3 /home/sarik/urlcheckermachine/sheet_manager.py
+WorkingDirectory=/home/sarik/webdriver-scraper/
+Environment="PATH=/home/sarik/webdriver-scraper/venv/bin/:/usr/bin:/usr/bin/google-chrome"
+ExecStart=/home/sarik/webdriver-scraper/venv/bin/python3 /home/sarik/webdriver-scraper/sheet_manager.py
 StandardOutput=journal
 StandardError=journal
 
